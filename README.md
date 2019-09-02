@@ -1,6 +1,6 @@
 
 
-## Ecommerce desde 0 con boostrap 4
+##Ecommerce desde 0 con boostrap 4
 
 Integrantes:
 
@@ -8,7 +8,7 @@ Integrantes:
 - Christopher Díaz
 - Moises Magna
 
-´´´
+```
 
 boostrap
-´´´
+```
