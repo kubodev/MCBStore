@@ -1,150 +1,1610 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>BitShop</title>
+    <link href="https://fonts.googleapis.com/css?family=Aleo:300,400,700|Montserrat:300,400,500,700|Quicksand:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="css/main.css?v=1.0.5" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Hello</title>
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
 
-    <div class="container">
-        <!-- Content here -->
+    <header>
+        <div class="px-lg-5 px-md-3 body-content">
+
+            <div class="container-fluid d-none d-md-block">
+                <div class="row text-sm-left text-center">
+                    <div class="col-sm-8">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item"><i class="fas fa-mobile-alt"></i> +56 226565094</li>
+                            <li class="list-inline-item danger">
+                                <a href="#" class="border-left pl-2">Garantia y Despacho</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Servicio al Cliente</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Contáctenos</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col text-right d-none d-sm-block">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a class="underline" href="login.html">Iniciar sesión</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="underline" href="registro.html">Crear cuenta</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="bg-white sticky-top bx-shadow">
+        <div class="px-lg-5 px-md-3 body-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-md-3 px-md-0 align-items-baseline">
+                        <nav class="navbar navbar-expand-md navbar-light px-sm-2 px-0 py-0 py-sm-2">
+                            <a class="navbar-brand" href="index.html">
+                                <img class="logo" src="img/logo_bitshop.png" alt="">
+                            </a>
+
+
+                            <div class="d-flex d-md-none d-none">
+                                <a href="#">
+                                    <div class="login d-flex justify-content-start mr-lg-2 mr-2">
+                                        <span class="mr-1 icon rounded-circle text-center p-1">
+                                            <img src="img/Iconos-Wishlist.png" class="align-text-bottom">
+                                        </span>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="cart d-flex justify-content-start">
+                                        <span class="icon rounded-circle text-center p-1">
+                                            <img src="img/Iconos-Carro.png" class="align-text-bottom">
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <a class="navbar-toggler" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarResponsive"
+                                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                        </nav>
+
+
+                    </div>
+                    <!-- buscar -->
+                    <div class="col-md-6 px-md-0">
+                        <form class="mt-0 mt-sm-3">
+                            <div class="form-group mb-2 buscar">
+                                <label for="buscar" class="sr-only">Buscar</label>
+                                <input type="text" class="form-control" id="buscar" placeholder="Estoy buscando...">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </form>
+                    </div>
+                    <!--/ buscar -->
+
+                    <!-- login -->
+                    <div id="show-scroll" class="col text-right d-none pl-0">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item mr-md-0">
+                                <a class="underline" href="login.html">Iniciar sesión</a>
+                            </li>
+                             <li class="list-inline-item">
+                                <a class="underline" href="registro.html">Crear cuenta</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/ login -->
+
+                    <!-- Navbar mega menu -->
+                    <div class="col-lg-12 d-md-block d-none">
+                        <nav class="navbar navbar-expand-md px-0 pb-0">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarText">
+                                <ul class="nav text-uppercase mr-auto">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle pl-0 font-weight-bold quick" data-toggle="dropdown"
+                                            href="#" role="button" aria-haspopup="true" aria-expanded="false">Categorías</a>
+                                        <div class="dropdown-menu text-capitalize py-0 mt-0 bg-light">
+                                            <div class="row shadow rounded">
+                                                <!-- Categorias -->
+                                                <div class="col-3 col-md-4 col-lg-3 bg-secondary px-0 rounded-left">
+                                                    <div class="nav flex-column nav-pills py-3 text-white position-relative"
+                                                        id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                        <div class="arrow"></div>
+                                                        <a class="nav-link text-white pl-2" id="v-pills-computacion-tab"
+                                                            data-toggle="pill" href="#v-pills-computacion" role="tab"
+                                                            aria-controls="v-pills-computacion" aria-selected="true">Computación
+                                                            <i class="fas fa-chevron-right"></i> </a>
+
+                                                        <a class="nav-link text-white pl-2" id="v-pills-smarthome-tab"
+                                                            data-toggle="pill" href="#v-pills-smarthome" role="tab"
+                                                            aria-controls="v-pills-smarthome" aria-selected="false">SmartHome
+                                                            & Security <i class="fas fa-chevron-right"></i></a>
+
+                                                        <a class="nav-link text-white pl-2" id="v-pills-celulares-tab"
+                                                            data-toggle="pill" href="#v-pills-celulares" role="tab"
+                                                            aria-controls="v-pills-celulares" aria-selected="false">Celulares
+                                                            <i class="fas fa-chevron-right"></i></a>
+
+                                                        <a class="nav-link text-white pl-2" id="v-pills-gamers-tab"
+                                                            data-toggle="pill" href="#v-pills-gamers" role="tab"
+                                                            aria-controls="v-pills-gamers" aria-selected="false">Gamers <i
+                                                                class="fas fa-chevron-right"></i></a>
+
+                                                        <a class="nav-link text-white pl-2" id="v-pills-alarmas-tab"
+                                                            data-toggle="pill" href="#v-pills-alarmas" role="tab"
+                                                            aria-controls="v-pills-alarmas" aria-selected="false">Alarmas y
+                                                            Seguridad <i class="fas fa-chevron-right"></i></a>
+
+                                                        <a class="nav-link text-white pl-2" id="v-pills-accesorios-tab"
+                                                            data-toggle="pill" href="#v-pills-accesorios" role="tab"
+                                                            aria-controls="v-pills-accesorios" aria-selected="false">Accesorios
+                                                            <i class="fas fa-chevron-right"></i></a>
+
+                                                        <a class="nav-link text-white pl-2" id="v-pills-audio-tab"
+                                                            data-toggle="pill" href="#v-pills-audio" role="tab"
+                                                            aria-controls="v-pills-audio" aria-selected="false">Audio y
+                                                            Video <i class="fas fa-chevron-right"></i></a>
+
+                                                        <a class="nav-link text-white pl-2" id="v-pills-redes-tab"
+                                                            data-toggle="pill" href="#v-pills-redes" role="tab"
+                                                            aria-controls="v-pills-redes" aria-selected="false">Redes <i
+                                                                class="fas fa-chevron-right"></i></a>
+
+                                                        <a class="nav-link text-white pl-2" id="v-pills-insumos-tab"
+                                                            data-toggle="pill" href="#v-pills-insumos" role="tab"
+                                                            aria-controls="v-pills-insumos" aria-selected="false">Insumos
+                                                            de Oficina <i class="fas fa-chevron-right"></i></a>
+
+                                                        <a class="nav-link text-white pl-2" id="v-pills-software-tab"
+                                                            data-toggle="pill" href="#v-pills-software" role="tab"
+                                                            aria-controls="v-pills-software" aria-selected="false">Software
+                                                            <i class="fas fa-chevron-right"></i></a>
+
+                                                        <a class="nav-link text-white pl-2" id="v-pills-cloud-tab"
+                                                            data-toggle="pill" href="#v-pills-cloud" role="tab"
+                                                            aria-controls="v-pills-cloud" aria-selected="false">Cloud
+                                                            Computing <i class="fas fa-chevron-right"></i></a>
+
+                                                    </div>
+                                                </div>
+                                                <!-- Categorias -->
+
+                                                <!-- Mega menu info categoría -->
+                                                <div class="col rounded-right bg-another-grey">
+                                                    <div class="tab-content ml-3 mr-2 mt-4" id="v-pills-tabContent">
+                                                        <!-- computación -->
+                                                        <div class="tab-pane" id="v-pills-computacion" role="tabpanel"
+                                                            aria-labelledby="v-pills-computacion-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/computacion.png" alt="computación">
+                                                                Computación</h1>
+                                                            <hr>
+                                                            <div class="row mt-4">
+                                                                <div class="col-lg-3 col-6">
+                                                                    <h6>Subcategoría</h6>
+                                                                    <ul class="list-unstyled text-small">
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-3 col-6">
+                                                                    <h6>Subcategoría</h6>
+                                                                    <ul class="list-unstyled text-small">
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-3 col-6">
+                                                                    <h6>Subcategoría</h6>
+                                                                    <ul class="list-unstyled text-small">
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-3 col-6">
+                                                                    <h6>Subcategoría</h6>
+                                                                    <ul class="list-unstyled text-small">
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mt-5 mb-3">
+                                                                <div class="col-lg-3 col-6">
+                                                                    <h6>Subcategoría</h6>
+                                                                    <ul class="list-unstyled text-small">
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-3 col-6">
+                                                                    <h6>Subcategoría</h6>
+                                                                    <ul class="list-unstyled text-small">
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-3 col-6">
+                                                                    <h6>Subcategoría</h6>
+                                                                    <ul class="list-unstyled text-small">
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-3 col-6">
+                                                                    <h6>Subcategoría</h6>
+                                                                    <ul class="list-unstyled text-small">
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--/ computación -->
+
+                                                        <!-- SmartpHones & Security -->
+                                                        <div class="tab-pane" id="v-pills-smarthome" role="tabpanel"
+                                                            aria-labelledby="v-pills-smarthome-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/seguridad.png" alt="smartphones & Security">
+                                                                
+                                                                SmartpHones & Security</h1>
+                                                            <hr>
+                                                        </div>
+                                                        <!--/ SmartpHones & Security -->
+
+                                                        <!-- Celulares -->
+                                                        <div class="tab-pane" id="v-pills-celulares" role="tabpanel"
+                                                            aria-labelledby="v-pills-celulares-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/celular.png" alt="celulares">
+
+                                                                Celulares</h1>
+                                                            <hr>
+                                                        </div>
+                                                        <!--/ Celulares -->
+
+                                                        <!-- Gamers -->
+                                                        <div class="tab-pane" id="v-pills-gamers" role="tabpanel"
+                                                            aria-labelledby="v-pills-gamers-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/gamers.png" alt="gamers">
+
+                                                                Gamers</h1>
+                                                            <hr>
+                                                        </div>
+                                                        <!--/ Gamers -->
+
+                                                        <!-- Alarmas y Seguridad -->
+                                                        <div class="tab-pane" id="v-pills-alarmas" role="tabpanel"
+                                                            aria-labelledby="v-pills-alarmas-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/alarmas.png" alt="alarmas y seguridad">
+
+                                                                Alarmas y Seguridad</h1>
+                                                            <hr>
+                                                        </div>
+
+                                                        <!--/ Alarmas y Seguridad -->
+
+                                                        <!-- Audio y Video -->
+                                                        <div class="tab-pane" id="v-pills-audio" role="tabpanel"
+                                                            aria-labelledby="v-pills-audio-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/seguridad.png" alt="audio y video">
+
+                                                                Audio y Video</h1>
+                                                            <hr>
+                                                        </div>
+                                                        <!--/ Audio y Video -->
+
+                                                        <!-- Accesorios -->
+                                                        <div class="tab-pane" id="v-pills-accesorios" role="tabpanel"
+                                                            aria-labelledby="v-pills-accesorios-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/accesorios.png" alt="accesorios">
+
+                                                                Accesorios</h1>
+                                                            <hr>
+                                                        </div>
+                                                        <!--/ Accesorios -->
+
+                                                        <!-- Redes -->
+                                                        <div class="tab-pane" id="v-pills-redes" role="tabpanel"
+                                                            aria-labelledby="v-pills-redes-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/redes.png" alt="Redes">
+                                                                Redes</h1>
+                                                            <hr>
+                                                        </div>
+                                                        <!--/ Redes -->
+
+                                                        <!-- Insumos de Oficina -->
+                                                        <div class="tab-pane" id="v-pills-insumos" role="tabpanel"
+                                                            aria-labelledby="v-pills-insumos-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/oficina.png" alt="Insumos de ofcina">
+                                                                Insumos de Oficina</h1>
+                                                            <hr>
+                                                        </div>
+                                                        <!--/ Insumos de Oficina -->
+
+                                                        <!-- Software -->
+                                                        <div class="tab-pane" id="v-pills-software" role="tabpanel"
+                                                            aria-labelledby="v-pills-software-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/software.png" alt="software">
+
+                                                                Software</h1>
+                                                            <hr>
+                                                        </div>
+                                                        <!--/ Software -->
+
+                                                        <!-- Cloud Computing -->
+                                                        <div class="tab-pane" id="v-pills-cloud" role="tabpanel"
+                                                            aria-labelledby="v-pills-cloud-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/cloud.png" alt="Cloud">
+
+                                                                Cloud Computing</h1>
+                                                            <hr>
+                                                        </div>
+                                                        <!--/ Cloud Computing -->
+                                                    </div>
+                                                </div>
+                                                <!-- Mega menu info categoría -->
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item font-weight-bold">
+                                        <a class="nav-link quick" href="categoria.html">Ofertas</a>
+                                    </li>
+                                    <li class="nav-item font-weight-bold">
+                                        <a class="nav-link quick" href="categoria.html">Destacados</a>
+                                    </li>
+                                    <li class="nav-item font-weight-bold">
+                                        <a class="nav-link quick" href="categoria.html">Lo último</a>
+                                    </li>
+                                </ul>
+                                <div class="d-flex">
+                                    <a href="#">
+                                        <div class="login d-flex justify-content-start mr-lg-2">
+                                            <span class="mr-1 icon rounded-circle text-center p-1">
+                                                <img src="img/Iconos-Wishlist.png" class="align-text-bottom">
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="cart d-flex justify-content-start">
+                                            <span class="icon rounded-circle text-center p-1">
+                                                <img src="img/Iconos-Carro.png" class="align-text-bottom">
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!--/ Navbar mega menu -->
+
+                </div>
+
+                <!-- NAVBAR -->
+                <div class="col-12 p-0 pb-2 d-md-none">
+                    <nav class="navbar bg-light py-0">
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav mr-auto text-center scrollTop">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link font-weight-bold dropdown-toggle quick" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categorías</a>
+                                    <div class="dropdown-menu text-center">
+                                        <a class="dropdown-item active" href="#">Computación</a>
+                                        <a class="dropdown-item" href="#">SmartHome & Security</a>
+                                        <a class="dropdown-item" href="#">Celulares</a>
+                                        <a class="dropdown-item" href="#">Gamers</a>
+                                        <a class="dropdown-item" href="#">Alarmas y Seguridad</a>
+                                        <a class="dropdown-item" href="#">Accesorios</a>
+                                        <a class="dropdown-item" href="#">Audio y Video</a>
+                                        <a class="dropdown-item" href="#">Redes</a>
+                                        <a class="dropdown-item" href="#">Insumos de Oficina</a>
+                                        <a class="dropdown-item" href="#">Software</a>
+                                        <a class="dropdown-item" href="#">Cloud Computing</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold active quick" href="#">Ofertas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold quick" href="#">Destacados</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold quick" href="categoria.html">Lo último</a>
+                                </li>
+                            </ul>
+                            <!-- </div> -->
+                        </div>
+
+                    </nav>
+                </div>
+                <!-- / NAVBAR -->
+            </div>
+        </div>
     </div>
 
-    <div class="con tainer-fluid">
-      ...
+
+    <!-- banner -->
+    <section id="banner" class="animated fadeIn">
+        <div class="card slider-content">
+            <div id="carouselHome" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item img-bg _1 active">
+                        <div class="carousel-caption">
+                            <div class="px-lg-5 px-md-3 body-content position-relative">
+                                <button type="button" class="btn btn-light text-uppercase text-secondary font-weight-bold py-2 ml-sm-3">añadir al carro</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item img-bg _2">
+                        <div class="carousel-caption">
+                            <div class="px-lg-5 px-md-3 body-content position-relative">
+                                <button type="button" class="btn btn-outline-light text-uppercase font-weight-bold py-2 ml-sm-3">ver productos</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="carousel-item img-bg _1">
+                    
+                    </div> -->
+                </div>
+            </div>
+
+
+            <!-- <div class="card-img-overlay banner">
+                <div class="px-lg-5 px-md-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                               <ul class="list-unstyled d-flex mb-1">
+                                    <li class="bg-primary">
+                                        <h6 class="mb-0 my-1 pl-2 pr-3">Celulares Y Tablets</h6>
+                                    </li>
+                                    <li class="bg-danger rounded-right ml-2 d-none d-sm-block">
+                                        <h6 class="font-weight-bold mb-0 my-1 px-2">- 20%</h6>
+                                    </li>
+                                </ul> 
+
+                                 <div class="text-secondary">
+                                    <h1 class="card-title text-uppercase font-weight-bold quick">Ofertas en <br>
+                                        smartphones</h1>
+                                    <p class="card-text d-none d-sm-block h6">Todo para la seguridad que <br> necesitas
+                                        en tu Hogar</p>
+                                </div> 
+
+                                <div class="mt-2">
+                                    <button type="button" class="btn btn-light text-uppercase text-secondary font-weight-bold px-1 py-2 px-sm-3">añadir
+                                        al
+                                        carro</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- garantia despacho y envios -->
+        <div class="d-none d-sm-none d-md-block">
+            <div class="px-lg-5 px-md-3 body-content">
+                <div class="container-fluid">
+                    <div class="card w-100 mt-n4 rounded">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="text-center col">
+                                    <div style="height:50px;" class="align-items-center d-flex justify-content-center">
+                                        <img src="img/bargain.png" alt="Descuentos">
+
+                                    </div>
+
+                                    <h3 class="text-uppercase font-weight-bold text-secondary mt-2 h6 quick">descuentos para
+                                        empresas</h3>
+                                    <p class="card-text min-h">Registrate como empersa y <br> accede a descuentos y
+                                        beneficios <br>especiales.</p>
+                                    <a class="text-uppercase mt-3 underline link" href="#">regístrate como empresa</a>
+                                </div>
+
+                                <div class="text-center col">
+                                    <div style="height:50px;" class="align-items-center d-flex justify-content-center">
+                                        <img src="img/Icono-Despacho.png" alt="Despacho">
+                                    </div>
+
+                                    <h3 class="text-uppercase font-weight-bold text-secondary mt-2 h6 quick">disponibilidad
+                                        inmediata</h3>
+                                    <p class="card-text min-h">Compra tu producto hoy y retíralo <br> en 24 o 48 hrs.</p>
+                                    <a class="text-uppercase mt-3 underline link" href="#">ver sobre despacho</a>
+                                </div>
+
+                                <div class="text-center col">
+                                    <div style="height:50px;" class="align-items-center d-flex justify-content-center">
+                                        <img src="img/Icono-garantia.png" alt="Garantia">
+                                    </div>
+
+                                    <h3 class="text-uppercase font-weight-bold text-secondary mt-2 h6 quick">servicio al
+                                        cliente</h3>
+                                    <p class="card-text min-h">Te respondemos si tienes algún <br> problema con un
+                                        producto</p>
+                                    <a class="text-uppercase mt-3 underline link" href="#">ver sobre garantías</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ garantia despacho y envios -->
+
+    </section>
+    <!-- /banner -->
+
+    <!-- ofertas -->
+    <div class="px-lg-5 px-md-3 body-content">
+        <div class="container-fluid">
+            <div class="separator overflow-hidden position-relative bg-light-grey my-4 rounded">
+                <div class="pl-3 bg-white rounded-left py-1 py-sm-0">
+                    <h1 class="text-secondary text-uppercase mb-0 quick">ofertas</h1>
+                    <div class="slide"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                One of three columns
+    <!-- productos -->
+    <section class="mb-3 productos">
+        <div class="px-lg-5 px-md-3 body-content">
+            <div class="container-fluid">
+                <div id="carouselOfertas" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner mx-md-0">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-around">
+                                <!-- producto 1 -->
+                                <div class="card mb-3 mr-3 rounded position-relative">
+                                    <div class="discount bg-danger rounded-right">
+                                        <span class="px-2 text-white">- 20%</span>
+                                    </div>
+
+                                    <a href="detalle-producto.html"><img src="img/Bitmap@2x.png" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-uppercase font-weight-bold">lenovo</h5>
+                                        <p class="card-text ellips mb-0 mb-sm-2">Lenovo NTB T480s i7-855OU 8GB 25GB SSD
+                                            14' Win10Pro - 1920 x 1080 LCD - Intel Core i7-855OU / 4.1 GHz</p>
+                                        <small class="card-text mb-0 dash"><s>1.389.780</s></small>
+                                        <h1 class="text-secondary price mb-0">$1.125.710</h1>
+                                        <p class="text-secondary mt-n2"><small>Precio efectivo</small> </p>
+
+                                        <div class="d-md-flex justify-content-around d-none d-sm-block">
+                                            <button type="button" class="btn btn-outline-primary text-uppercase mb-md-0 mr-md-1">Añadir
+                                                al carro</button>
+                                            <button type="button" class="btn btn-outline-secondary text-uppercase">ver producto</button>
+                                        </div>
+
+                                        <div class="footer-img align-items-center d-flex justify-content-around mb-0 mt-2 pl-0 text-center">
+                                            <div class="cantidad align-bottom">
+                                                <p class="mb-0"> Cant 20</p>
+                                            </div>
+                                            <div class="px-2 px-sm-2 px-lg-3">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                            </div>
+                                            <div>
+                                                <a href="detalle-producto.html"><img src="img/Iconos-Wishlist.png" alt="" class="sm"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="my-1 d-none d-sm-block">
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="comprar">
+                                                <label class="custom-control-label  small pt-1" for="comprar">Comprar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- producto 2 -->
+                                <div class="card mb-3 mr-md-3 rounded position-relative">
+                                    <div class="discount bg-danger rounded-right">
+                                        <span class="px-2 text-white">- 20%</span>
+                                    </div>
+
+                                    <a href="detalle-producto.html"><img src="img/Bitmap@2x.png" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-uppercase font-weight-bold">lenovo</h5>
+                                        <p class="card-text ellips mb-0 mb-sm-2">Lenovo NTB T480s i7-855OU 8GB 25GB SSD
+                                            14' Win10Pro - 1920 x 1080 LCD - Intel Core i7-855OU / 4.1 GHz</p>
+                                        <small class="card-text mb-0 dash"><s>1.389.780</s></small>
+                                        <h1 class="text-secondary price mb-0">$1.125.710</h1>
+                                        <p class="text-secondary mt-n2"><small>Precio efectivo</small> </p>
+
+                                        <div class="d-md-flex justify-content-around d-none d-sm-block">
+                                            <button type="button" class="btn btn-outline-primary text-uppercase mb-md-0 mr-md-1">Añadir
+                                                al carro</button>
+                                            <button type="button" class="btn btn-outline-secondary text-uppercase">ver producto</button>
+                                        </div>
+
+                                        <div class="footer-img align-items-center d-flex justify-content-around mb-0 mt-2 pl-0 text-center">
+                                            <div class="cantidad align-bottom">
+                                                <p class="mb-0"> Cant 20</p>
+                                            </div>
+                                            <div class="px-2 px-sm-2 px-lg-3">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                            </div>
+                                            <div>
+                                                <a href="detalle-producto.html"><img src="img/Iconos-Wishlist.png" alt="" class="sm"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="my-1 d-none d-sm-block">
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="comprar2">
+                                                <label class="custom-control-label  small pt-1" for="comprar2">Comprar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- producto 3 -->
+                                <div class="card mb-3 mr-lg-3 rounded position-relative d-none d-md-block">
+                                    <div class="discount bg-danger rounded-right">
+                                        <span class="px-2 text-white">- 20%</span>
+                                    </div>
+
+                                    <a href="detalle-producto.html"><img src="img/Bitmap@2x.png" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-uppercase font-weight-bold">lenovo</h5>
+                                        <p class="card-text ellips mb-0 mb-sm-2">Lenovo NTB T480s i7-855OU 8GB 25GB SSD
+                                            14' Win10Pro - 1920 x 1080 LCD - Intel Core i7-855OU / 4.1 GHz</p>
+                                        <small class="card-text mb-0 dash"><s>1.389.780</s></small>
+                                        <h1 class="text-secondary price mb-0">$1.125.710</h1>
+                                        <p class="text-secondary mt-n2"><small>Precio efectivo</small> </p>
+
+                                        <div class="d-md-flex justify-content-around d-none d-sm-block">
+                                            <button type="button" class="btn btn-outline-primary text-uppercase mb-md-0 mr-md-1">Añadir
+                                                al carro</button>
+                                            <button type="button" class="btn btn-outline-secondary text-uppercase">ver producto</button>
+                                        </div>
+
+                                        <div class="footer-img align-items-center d-flex justify-content-around mb-0 mt-2 pl-0 text-center">
+                                            <div class="cantidad align-bottom">
+                                                <p class="mb-0"> Cant 20</p>
+                                            </div>
+                                            <div class="px-2 px-sm-2 px-lg-3">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                            </div>
+                                            <div>
+                                                <a href="detalle-producto.html"><img src="img/Iconos-Wishlist.png" alt="" class="sm"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="my-1 d-none d-sm-block">
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="comprar3">
+                                                <label class="custom-control-label  small pt-1" for="comprar3">Comprar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- producto 4-->
+                                <div class="card mb-3 rounded position-relative d-none d-lg-block">
+                                    <div class="discount bg-danger rounded-right">
+                                        <span class="px-2 text-white">- 20%</span>
+                                    </div>
+
+                                    <a href="detalle-producto.html"><img src="img/Bitmap@2x.png" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-uppercase font-weight-bold">lenovo</h5>
+                                        <p class="card-text ellips mb-0 mb-sm-2">Lenovo NTB T480s i7-855OU 8GB 25GB SSD
+                                            14' Win10Pro - 1920 x 1080 LCD - Intel Core i7-855OU / 4.1 GHz</p>
+                                        <small class="card-text mb-0 dash"><s>1.389.780</s></small>
+                                        <h1 class="text-secondary price mb-0">$1.125.710</h1>
+                                        <p class="text-secondary mt-n2"><small>Precio efectivo</small> </p>
+
+                                        <div class="d-md-flex justify-content-around d-none d-sm-block">
+                                            <button type="button" class="btn btn-outline-primary text-uppercase mb-md-0 mr-md-1">Añadir
+                                                al carro</button>
+                                            <button type="button" class="btn btn-outline-secondary text-uppercase">ver producto</button>
+                                        </div>
+
+                                        <div class="footer-img align-items-center d-flex justify-content-around mb-0 mt-2 pl-0 text-center">
+                                            <div class="cantidad align-bottom">
+                                                <p class="mb-0"> Cant 20</p>
+                                            </div>
+                                            <div class="px-2 px-sm-2 px-lg-3">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                            </div>
+                                            <div>
+                                                <a href="detalle-producto.html"><img src="img/Iconos-Wishlist.png" alt="" class="sm"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="my-1 d-none d-sm-block">
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="comprar4">
+                                                <label class="custom-control-label  small pt-1" for="comprar4">Comprar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-around">
+                                <!-- producto 5 -->
+                                <div class="card mb-3 mr-3 rounded position-relative">
+                                    <div class="discount bg-danger rounded-right">
+                                        <span class="px-2 text-white">- 20%</span>
+                                    </div>
+
+                                    <a href="detalle-producto.html"><img src="img/Bitmap@2x.png" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-uppercase font-weight-bold">lenovo</h5>
+                                        <p class="card-text ellips mb-0 mb-sm-2">Lenovo NTB T480s i7-855OU 8GB 25GB SSD
+                                            14' Win10Pro - 1920 x 1080 LCD - Intel Core i7-855OU / 4.1 GHz</p>
+                                        <small class="card-text mb-0 dash"><s>1.389.780</s></small>
+                                        <h1 class="text-secondary price mb-0">$1.125.710</h1>
+                                        <p class="text-secondary mt-n2"><small>Precio efectivo</small> </p>
+
+                                        <div class="d-md-flex justify-content-around d-none d-sm-block">
+                                            <button type="button" class="btn btn-outline-primary text-uppercase mb-md-0 mr-md-1">Añadir
+                                                al carro</button>
+                                            <button type="button" class="btn btn-outline-secondary text-uppercase">ver producto</button>
+                                        </div>
+
+                                        <div class="footer-img align-items-center d-flex justify-content-around mb-0 mt-2 pl-0 text-center">
+                                            <div class="cantidad align-bottom">
+                                                <p class="mb-0"> Cant 20</p>
+                                            </div>
+                                            <div class="px-2 px-sm-2 px-lg-3">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                            </div>
+                                            <div>
+                                                <a href="detalle-producto.html"><img src="img/Iconos-Wishlist.png" alt="" class="sm"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="my-1 d-none d-sm-block">
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="comprar5">
+                                                <label class="custom-control-label  small pt-1" for="comprar5">Comprar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- producto 6-->
+                                <div class="card mb-3 mr-md-3 rounded position-relative">
+                                    <div class="discount bg-danger rounded-right">
+                                        <span class="px-2 text-white">- 20%</span>
+                                    </div>
+
+                                    <a href="detalle-producto.html"><img src="img/Bitmap@2x.png" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-uppercase font-weight-bold">lenovo</h5>
+                                        <p class="card-text ellips mb-0 mb-sm-2">Lenovo NTB T480s i7-855OU 8GB 25GB SSD
+                                            14' Win10Pro - 1920 x 1080 LCD - Intel Core i7-855OU / 4.1 GHz</p>
+                                        <small class="card-text mb-0 dash"><s>1.389.780</s></small>
+                                        <h1 class="text-secondary price mb-0">$1.125.710</h1>
+                                        <p class="text-secondary mt-n2"><small>Precio efectivo</small> </p>
+
+                                        <div class="d-md-flex justify-content-around d-none d-sm-block">
+                                            <button type="button" class="btn btn-outline-primary text-uppercase mb-md-0 mr-md-1">Añadir
+                                                al carro</button>
+                                            <button type="button" class="btn btn-outline-secondary text-uppercase">ver producto</button>
+                                        </div>
+
+                                        <div class="footer-img align-items-center d-flex justify-content-around mb-0 mt-2 pl-0 text-center">
+                                            <div class="cantidad align-bottom">
+                                                <p class="mb-0"> Cant 20</p>
+                                            </div>
+                                            <div class="px-2 px-sm-2 px-lg-3">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                            </div>
+                                            <div>
+                                                <a href="detalle-producto.html"><img src="img/Iconos-Wishlist.png" alt="" class="sm"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="my-1 d-none d-sm-block">
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="comprar6">
+                                                <label class="custom-control-label  small pt-1" for="comprar6">Comprar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- producto 7 -->
+                                <div class="card mb-3 mr-lg-3 rounded position-relative d-none d-md-block">
+                                    <div class="discount bg-danger rounded-right">
+                                        <span class="px-2 text-white">- 20%</span>
+                                    </div>
+
+                                    <a href="detalle-producto.html"><img src="img/Bitmap@2x.png" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-uppercase font-weight-bold">lenovo</h5>
+                                        <p class="card-text ellips mb-0 mb-sm-2">Lenovo NTB T480s i7-855OU 8GB 25GB SSD
+                                            14' Win10Pro - 1920 x 1080 LCD - Intel Core i7-855OU / 4.1 GHz</p>
+                                        <small class="card-text mb-0 dash"><s>1.389.780</s></small>
+                                        <h1 class="text-secondary price mb-0">$1.125.710</h1>
+                                        <p class="text-secondary mt-n2"><small>Precio efectivo</small> </p>
+
+                                        <div class="d-md-flex justify-content-around d-none d-sm-block">
+                                            <button type="button" class="btn btn-outline-primary text-uppercase mb-md-0 mr-md-1">Añadir
+                                                al carro</button>
+                                            <button type="button" class="btn btn-outline-secondary text-uppercase">ver producto</button>
+                                        </div>
+
+                                        <div class="footer-img align-items-center d-flex justify-content-around mb-0 mt-2 pl-0 text-center">
+                                            <div class="cantidad align-bottom">
+                                                <p class="mb-0"> Cant 20</p>
+                                            </div>
+                                            <div class="px-2 px-sm-2 px-lg-3">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                            </div>
+                                            <div>
+                                                <a href="detalle-producto.html"><img src="img/Iconos-Wishlist.png" alt="" class="sm"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="my-1 d-none d-sm-block">
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="comprar7">
+                                                <label class="custom-control-label  small pt-1" for="comprar7">Comprar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- producto 8-->
+                                <div class="card mb-3 rounded position-relative d-none d-lg-block">
+                                    <div class="discount bg-danger rounded-right">
+                                        <span class="px-2 text-white">- 20%</span>
+                                    </div>
+
+                                    <a href="detalle-producto.html"><img src="img/Bitmap@2x.png" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-uppercase font-weight-bold">lenovo</h5>
+                                        <p class="card-text ellips mb-0 mb-sm-2">Lenovo NTB T480s i7-855OU 8GB 25GB SSD
+                                            14' Win10Pro - 1920 x 1080 LCD - Intel Core i7-855OU / 4.1 GHz</p>
+                                        <small class="card-text mb-0 dash"><s>1.389.780</s></small>
+                                        <h1 class="text-secondary price mb-0">$1.125.710</h1>
+                                        <p class="text-secondary mt-n2"><small>Precio efectivo</small> </p>
+
+                                        <div class="d-md-flex justify-content-around d-none d-sm-block">
+                                            <button type="button" class="btn btn-outline-primary text-uppercase mb-md-0 mr-md-1">Añadir
+                                                al carro</button>
+                                            <button type="button" class="btn btn-outline-secondary text-uppercase">ver producto</button>
+                                        </div>
+
+                                        <div class="footer-img align-items-center d-flex justify-content-around mb-0 mt-2 pl-0 text-center">
+                                            <div class="cantidad align-bottom">
+                                                <p class="mb-0"> Cant 20</p>
+                                            </div>
+                                            <div class="px-2 px-sm-2 px-lg-3">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                            </div>
+                                            <div>
+                                                <a href="detalle-producto.html"><img src="img/Iconos-Wishlist.png" alt="" class="sm"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="my-1 d-none d-sm-block">
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="comprar8">
+                                                <label class="custom-control-label  small pt-1" for="comprar8">Comprar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#carouselOfertas" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselOfertas" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
+                    </div>
+                </div>
             </div>
-            <div class="col-sm">
-                One of three columns
-            </div>
-            <div class="col-sm">
-                One of three columns
+        </div>
+    </section>
+    <!-- productos -->
+    <!--/ ofertas -->
+
+
+    <!-- destacados -->
+    <div class="px-lg-5 px-md-3 body-content">
+        <div class="container-fluid">
+            <div class="separator overflow-hidden position-relative bg-light-grey my-4 rounded">
+                <div class="pl-3 bg-white rounded-left py-1 py-sm-0">
+                    <h1 class="text-secondary text-uppercase mb-0 quick">Destacados</h1>
+                    <div class="slide"></div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="col col-lg-2">
-                1 of 3
-            </div>
-            <div class="col-md-auto">
-                Variable width content
-            </div>
-            <div class="col col-lg-2">
-                3 of 3
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                1 of 3
-            </div>
-            <div class="col-md-auto">
-                Variable width content
-            </div>
-            <div class="col col-lg-2">
-                3 of 3
-            </div>
-        </div>
-    </div>
+    <!-- productos -->
+    <section class="mb-3 productos">
+        <div class="px-lg-5 px-md-3 body-content">
+            <div class="container-fluid">
+                <div id="carouselDestacados" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner mx-md-0">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-around">
+                                <!-- producto 1 -->
+                                <div class="card mb-3 mr-3 rounded position-relative">
+                                    <div class="discount bg-danger rounded-right">
+                                        <span class="px-2 text-white">- 20%</span>
+                                    </div>
 
-    <div class="container">
-        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-        <div class="row">
-            <div class="col-12 col-md-8">.col-12 .col-md-8</div>
-            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        </div>
+                                    <a href="detalle-producto.html"><img src="img/Bitmap@2x.png" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-uppercase font-weight-bold">lenovo</h5>
+                                        <p class="card-text ellips mb-0 mb-sm-2">Lenovo NTB T480s i7-855OU 8GB 25GB SSD
+                                            14'
+                                            Win10Pro - 1920 x 1080 LCD - Intel Core i7-855OU / 4.1 GHz</p>
+                                        <small class="card-text mb-0 dash"><s>1.389.780</s></small>
+                                        <h1 class="text-secondary price mb-0">$1.125.710</h1>
+                                        <p class="text-secondary mt-n2"><small>Precio efectivo</small> </p>
 
-        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-        <div class="row">
-            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        </div>
+                                        <div class="d-md-flex justify-content-around d-none d-sm-block">
+                                            <button type="button" class="btn btn-outline-primary text-uppercase mb-md-0 mr-md-1">Añadir
+                                                al carro</button>
+                                            <button type="button" class="btn btn-outline-secondary text-uppercase">ver producto</button>
+                                        </div>
 
-        <!-- Columns are always 50% wide, on mobile and desktop -->
-        <div class="row">
-            <div class="col-6">.col-6</div>
-            <div class="col-6">.col-6</div>
-        </div>
-    </div>
+                                        <div class="footer-img align-items-center d-flex justify-content-around mb-0 mt-2 pl-0 text-center">
+                                            <div class="cantidad align-bottom">
+                                                <p class="mb-0"> Cant 20</p>
+                                            </div>
+                                            <div class="px-2 px-sm-2 px-lg-3">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                            </div>
+                                            <div>
+                                                <a href="detalle-producto.html"><img src="img/Iconos-Wishlist.png" alt="" class="sm"></a>
+                                            </div>
+                                        </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col align-self-start">
-                One of three columns
-            </div>
-            <div class="col align-self-center">
-                One of three columns
-            </div>
-            <div class="col align-self-end">
-                One of three columns
-            </div>
-        </div>
-    </div>
+                                        <div class="my-1 d-none d-sm-block">
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="comprar9">
+                                                <label class="custom-control-label  small pt-1" for="comprar9">Comprar</label>
+                                            </div>
+                                        </div>
+                                    </div>
 
-    <div class="container">
-        <div class="row justify-content-start">
-            <div class="col-4">
-                One of two columns
-            </div>
-            <div class="col-4">
-                One of two columns
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-4">
-                One of two columns
-            </div>
-            <div class="col-4">
-                One of two columns
-            </div>
-        </div>
-        <div class="row justify-content-end">
-            <div class="col-4">
-                One of two columns
-            </div>
-            <div class="col-4">
-                One of two columns
-            </div>
-        </div>
-        <div class="row justify-content-around">
-            <div class="col-4">
-                One of two columns
-            </div>
-            <div class="col-4">
-                One of two columns
-            </div>
-        </div>
-        <div class="row justify-content-between">
-            <div class="col-4">
-                One of two columns
-            </div>
-            <div class="col-4">
-                One of two columns
-            </div>
-        </div>
-    </div>
+                                </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                                <!-- producto 2 -->
+                                <div class="card mb-3 mr-md-3 rounded position-relative">
+                                    <div class="discount bg-danger rounded-right">
+                                        <span class="px-2 text-white">- 20%</span>
+                                    </div>
+
+                                    <a href="detalle-producto.html"><img src="img/Bitmap@2x.png" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-uppercase font-weight-bold">lenovo</h5>
+                                        <p class="card-text ellips mb-0 mb-sm-2">Lenovo NTB T480s i7-855OU 8GB 25GB SSD
+                                            14'
+                                            Win10Pro - 1920 x 1080 LCD - Intel Core i7-855OU / 4.1 GHz</p>
+                                        <small class="card-text mb-0 dash"><s>1.389.780</s></small>
+                                        <h1 class="text-secondary price mb-0">$1.125.710</h1>
+                                        <p class="text-secondary mt-n2"><small>Precio efectivo</small> </p>
+
+                                        <div class="d-md-flex justify-content-around d-none d-sm-block">
+                                            <button type="button" class="btn btn-outline-primary text-uppercase mb-md-0 mr-md-1">Añadir
+                                                al carro</button>
+                                            <button type="button" class="btn btn-outline-secondary text-uppercase">ver producto</button>
+                                        </div>
+
+                                        <div class="footer-img align-items-center d-flex justify-content-around mb-0 mt-2 pl-0 text-center">
+                                            <div class="cantidad align-bottom">
+                                                <p class="mb-0"> Cant 20</p>
+                                            </div>
+                                            <div class="px-2 px-sm-2 px-lg-3">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                            </div>
+                                            <div>
+                                                <a href="detalle-producto.html"><img src="img/Iconos-Wishlist.png" alt="" class="sm"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="my-1 d-none d-sm-block">
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="comprar22">
+                                                <label class="custom-control-label  small pt-1" for="comprar22">Comprar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- producto 3 -->
+                                <div class="card mb-3 mr-lg-3 rounded position-relative d-none d-md-block">
+                                    <div class="discount bg-danger rounded-right">
+                                        <span class="px-2 text-white">- 20%</span>
+                                    </div>
+
+                                    <a href="detalle-producto.html"><img src="img/Bitmap@2x.png" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-uppercase font-weight-bold">lenovo</h5>
+                                        <p class="card-text ellips mb-0 mb-sm-2">Lenovo NTB T480s i7-855OU 8GB 25GB SSD
+                                            14'
+                                            Win10Pro - 1920 x 1080 LCD - Intel Core i7-855OU / 4.1 GHz</p>
+                                        <small class="card-text mb-0 dash"><s>1.389.780</s></small>
+                                        <h1 class="text-secondary price mb-0">$1.125.710</h1>
+                                        <p class="text-secondary mt-n2"><small>Precio efectivo</small> </p>
+
+                                        <div class="d-md-flex justify-content-around d-none d-sm-block">
+                                            <button type="button" class="btn btn-outline-primary text-uppercase mb-md-0 mr-md-1">Añadir
+                                                al carro</button>
+                                            <button type="button" class="btn btn-outline-secondary text-uppercase">ver producto</button>
+                                        </div>
+
+                                        <div class="footer-img align-items-center d-flex justify-content-around mb-0 mt-2 pl-0 text-center">
+                                            <div class="cantidad align-bottom">
+                                                <p class="mb-0"> Cant 20</p>
+                                            </div>
+                                            <div class="px-2 px-sm-2 px-lg-3">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                            </div>
+                                            <div>
+                                                <a href="detalle-producto.html"><img src="img/Iconos-Wishlist.png" alt="" class="sm"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="my-1 d-none d-sm-block">
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="comprar32">
+                                                <label class="custom-control-label  small pt-1" for="comprar32">Comprar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- producto 4-->
+                                <div class="card mb-3 rounded position-relative d-none d-lg-block">
+                                    <div class="discount bg-danger rounded-right">
+                                        <span class="px-2 text-white">- 20%</span>
+                                    </div>
+
+                                    <a href="detalle-producto.html"><img src="img/Bitmap@2x.png" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-uppercase font-weight-bold">lenovo</h5>
+                                        <p class="card-text ellips mb-0 mb-sm-2">Lenovo NTB T480s i7-855OU 8GB 25GB SSD
+                                            14'
+                                            Win10Pro - 1920 x 1080 LCD - Intel Core i7-855OU / 4.1 GHz</p>
+                                        <small class="card-text mb-0 dash"><s>1.389.780</s></small>
+                                        <h1 class="text-secondary price mb-0">$1.125.710</h1>
+                                        <p class="text-secondary mt-n2"><small>Precio efectivo</small> </p>
+
+                                        <div class="d-md-flex justify-content-around d-none d-sm-block">
+                                            <button type="button" class="btn btn-outline-primary text-uppercase mb-md-0 mr-md-1">Añadir
+                                                al carro</button>
+                                            <button type="button" class="btn btn-outline-secondary text-uppercase">ver producto</button>
+                                        </div>
+
+                                        <div class="footer-img align-items-center d-flex justify-content-around mb-0 mt-2 pl-0 text-center">
+                                            <div class="cantidad align-bottom">
+                                                <p class="mb-0"> Cant 20</p>
+                                            </div>
+                                            <div class="px-2 px-sm-2 px-lg-3">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                            </div>
+                                            <div>
+                                                <a href="detalle-producto.html"><img src="img/Iconos-Wishlist.png" alt="" class="sm"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="my-1 d-none d-sm-block">
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="comprar42">
+                                                <label class="custom-control-label  small pt-1" for="comprar42">Comprar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-around">
+                                <!-- producto 5 -->
+                                <div class="card mb-3 mr-3 rounded position-relative">
+                                    <div class="discount bg-danger rounded-right">
+                                        <span class="px-2 text-white">- 20%</span>
+                                    </div>
+
+                                    <a href="detalle-producto.html"><img src="img/Bitmap@2x.png" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-uppercase font-weight-bold">lenovo</h5>
+                                        <p class="card-text ellips mb-0 mb-sm-2">Lenovo NTB T480s i7-855OU 8GB 25GB SSD
+                                            14'
+                                            Win10Pro - 1920 x 1080 LCD - Intel Core i7-855OU / 4.1 GHz</p>
+                                        <small class="card-text mb-0 dash"><s>1.389.780</s></small>
+                                        <h1 class="text-secondary price mb-0">$1.125.710</h1>
+                                        <p class="text-secondary mt-n2"><small>Precio efectivo</small> </p>
+
+                                        <div class="d-md-flex justify-content-around d-none d-sm-block">
+                                            <button type="button" class="btn btn-outline-primary text-uppercase mb-md-0 mr-md-1">Añadir
+                                                al carro</button>
+                                            <button type="button" class="btn btn-outline-secondary text-uppercase">ver producto</button>
+                                        </div>
+
+                                        <div class="footer-img align-items-center d-flex justify-content-around mb-0 mt-2 pl-0 text-center">
+                                            <div class="cantidad align-bottom">
+                                                <p class="mb-0"> Cant 20</p>
+                                            </div>
+                                            <div class="px-2 px-sm-2 px-lg-3">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                            </div>
+                                            <div>
+                                                <a href="detalle-producto.html"><img src="img/Iconos-Wishlist.png" alt="" class="sm"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="my-1 d-none d-sm-block">
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="comprar52">
+                                                <label class="custom-control-label  small pt-1" for="comprar52">Comprar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- producto 6-->
+                                <div class="card mb-3 mr-md-3 rounded position-relative">
+                                    <div class="discount bg-danger rounded-right">
+                                        <span class="px-2 text-white">- 20%</span>
+                                    </div>
+
+                                    <a href="detalle-producto.html"><img src="img/Bitmap@2x.png" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-uppercase font-weight-bold">lenovo</h5>
+                                        <p class="card-text ellips mb-0 mb-sm-2">Lenovo NTB T480s i7-855OU 8GB 25GB SSD
+                                            14'
+                                            Win10Pro - 1920 x 1080 LCD - Intel Core i7-855OU / 4.1 GHz</p>
+                                        <small class="card-text mb-0 dash"><s>1.389.780</s></small>
+                                        <h1 class="text-secondary price mb-0">$1.125.710</h1>
+                                        <p class="text-secondary mt-n2"><small>Precio efectivo</small> </p>
+
+                                        <div class="d-md-flex justify-content-around d-none d-sm-block">
+                                            <button type="button" class="btn btn-outline-primary text-uppercase mb-md-0 mr-md-1">Añadir
+                                                al carro</button>
+                                            <button type="button" class="btn btn-outline-secondary text-uppercase">ver producto</button>
+                                        </div>
+
+                                        <div class="footer-img align-items-center d-flex justify-content-around mb-0 mt-2 pl-0 text-center">
+                                            <div class="cantidad align-bottom">
+                                                <p class="mb-0"> Cant 20</p>
+                                            </div>
+                                            <div class="px-2 px-sm-2 px-lg-3">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                            </div>
+                                            <div>
+                                                <a href="detalle-producto.html"><img src="img/Iconos-Wishlist.png" alt="" class="sm"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="my-1 d-none d-sm-block">
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="comprar62">
+                                                <label class="custom-control-label  small pt-1" for="comprar62">Comprar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- producto 7 -->
+                                <div class="card mb-3 mr-lg-3 rounded position-relative d-none d-md-block">
+                                    <div class="discount bg-danger rounded-right">
+                                        <span class="px-2 text-white">- 20%</span>
+                                    </div>
+
+                                    <a href="detalle-producto.html"><img src="img/Bitmap@2x.png" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-uppercase font-weight-bold">lenovo</h5>
+                                        <p class="card-text ellips mb-0 mb-sm-2">Lenovo NTB T480s i7-855OU 8GB 25GB SSD
+                                            14'
+                                            Win10Pro - 1920 x 1080 LCD - Intel Core i7-855OU / 4.1 GHz</p>
+                                        <small class="card-text mb-0 dash"><s>1.389.780</s></small>
+                                        <h1 class="text-secondary price mb-0">$1.125.710</h1>
+                                        <p class="text-secondary mt-n2"><small>Precio efectivo</small> </p>
+
+                                        <div class="d-md-flex justify-content-around d-none d-sm-block">
+                                            <button type="button" class="btn btn-outline-primary text-uppercase mb-md-0 mr-md-1">Añadir
+                                                al carro</button>
+                                            <button type="button" class="btn btn-outline-secondary text-uppercase">ver producto</button>
+                                        </div>
+
+                                        <div class="footer-img align-items-center d-flex justify-content-around mb-0 mt-2 pl-0 text-center">
+                                            <div class="cantidad align-bottom">
+                                                <p class="mb-0"> Cant 20</p>
+                                            </div>
+                                            <div class="px-2 px-sm-2 px-lg-3">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                            </div>
+                                            <div>
+                                                <a href="detalle-producto.html"><img src="img/Iconos-Wishlist.png" alt="" class="sm"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="my-1 d-none d-sm-block">
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="comprar72">
+                                                <label class="custom-control-label  small pt-1" for="comprar72">Comprar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- producto 8-->
+                                <div class="card mb-3 rounded position-relative d-none d-lg-block">
+                                    <div class="discount bg-danger rounded-right">
+                                        <span class="px-2 text-white">- 20%</span>
+                                    </div>
+
+                                    <a href="detalle-producto.html"><img src="img/Bitmap@2x.png" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-uppercase font-weight-bold">lenovo</h5>
+                                        <p class="card-text ellips mb-0 mb-sm-2">Lenovo NTB T480s i7-855OU 8GB 25GB SSD
+                                            14'
+                                            Win10Pro - 1920 x 1080 LCD - Intel Core i7-855OU / 4.1 GHz</p>
+                                        <small class="card-text mb-0 dash"><s>1.389.780</s></small>
+                                        <h1 class="text-secondary price mb-0">$1.125.710</h1>
+                                        <p class="text-secondary mt-n2"><small>Precio efectivo</small> </p>
+
+                                        <div class="d-md-flex justify-content-around d-none d-sm-block">
+                                            <button type="button" class="btn btn-outline-primary text-uppercase mb-md-0 mr-md-1">Añadir
+                                                al carro</button>
+                                            <button type="button" class="btn btn-outline-secondary text-uppercase">ver producto</button>
+                                        </div>
+
+                                        <div class="footer-img align-items-center d-flex justify-content-around mb-0 mt-2 pl-0 text-center">
+                                            <div class="cantidad align-bottom">
+                                                <p class="mb-0"> Cant 20</p>
+                                            </div>
+                                            <div class="px-2 px-sm-2 px-lg-3">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                                <img src="img/star.png" alt="">
+                                            </div>
+                                            <div>
+                                                <a href="detalle-producto.html"><img src="img/Iconos-Wishlist.png" alt="" class="sm"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="my-1 d-none d-sm-block">
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="comprar82">
+                                                <label class="custom-control-label  small pt-1" for="comprar82">Comprar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#carouselDestacados" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselDestacados" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- productos -->
+    <!--/ destacados -->
+
+
+
+
+    <footer class="py-3 bg-white">
+        <div class="px-lg-5 px-md-3 body-content">
+            <div class="container-fluid">
+
+                <div class="row justify-content-between align-items-baseline mb-5">
+                    <div class="col-6">
+                        <img class="logo" src="img/logo_bitshop.png" alt="BitShop">
+                    </div>
+                    <div class="col-6 col-md-5">
+                        <ul class="list-inline mb-0 text-right">
+                            <li class="list-inline-item text-uppercase pr-3 d-none d-sm-inline">Síguenos en</li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <div class="bg-primary text-center" style="width:30px;height:30px;">
+                                        <i class="fab fa-facebook-f fa-lg text-white mt-2"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <div class="bg-primary text-center" style="width:30px;height:30px;">
+                                        <i class="fab fa-instagram fa-lg text-white mt-2"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2 col-sm-4 col-6">
+                        <h6 class="text-uppercase">Regístrate</h6>
+                        <ul class="list-unstyled text-small mt-3">
+                            <li><a class="text-secondary" href="login.html">Iniciar Sesión</a></li>
+                            <li><a class="text-secondary" href="registro.html">Crear una Cuenta</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col">
+                        <h6 class="text-uppercase">Sobre Nosotros </h6>
+                        <ul class="list-unstyled text-small mt-3">
+                            <li><a class="text-secondary" href="#">Quienes Somos</a></li>
+                            <li><a class="text-secondary" href="#">Política de Privacidad</a></li>
+                            <li><a class="text-secondary" href="#">Términos y Condiciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col">
+                        <h6 class="text-uppercase">Asistencia</h6>
+                        <ul class="list-unstyled text-small mt-3">
+                            <li><a class="text-secondary" href="#">Garantia y Despacho</a></li>
+                            <li><a class="text-secondary" href="#">Servicio al Cliente</a></li>
+                            <li><a class="text-secondary" href="#">Preguntas Frecuentes</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <h6 class="text-uppercase">suscríbete</h6>
+                        <p class="mt-2 text-strong-grey">
+                            Y recibe nuestras ofertas y novedades
+                        </p>
+
+                        <form class="mt-3">
+                            <div class="input-group mb-3 buscar">
+                                <input type="text" class="form-control mr-2" placeholder="Ingresa tu correo" aria-label="Ingresa tu correo"
+                                    aria-describedby="basic-addon2">
+                                <button type="button" class="btn btn-outline-primary text-uppercase mb-md-0 font-weight-bold">suscribirse</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-5 mt-md-5 text-center text-md-left">
+                        <span class="d-block d-sm-none">+56 9 45664785445</span>
+                        <p class="mb-0">Román Díaz 688, Providencia, Santiago <span class="cantidad">+56 9 45664785445</span></p>
+                        <p>© 2019 Bitshop. Todos los derechos reservados</p>
+                    </div>
+
+                    <div class="col mt-5">
+                        <div class="d-flex justify-content-between footer-img align-items-center">
+                            <div>
+                                <img src="img/sitio-seguro.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/enviame.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/webpay-logo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // mega-menu
+            $(".nav-pills a").mouseover(function () {
+                $('#v-pills-tab a[href="'+ $(this).attr('href')+'"]').tab('show')
+            })
+
+             // stiky header 
+            
+
+            $(window).scroll(function () {
+                var sticky = $('.sticky-top'),
+                    scroll = $(window).scrollTop();
+
+                if (scroll >= 100) {
+                    sticky.addClass('scroll');
+                    $('#show-scroll').removeClass('d-none');
+                } else if (scroll <= 58) {
+                    sticky.removeClass('scroll');
+                    $('#show-scroll').addClass('d-none');
+                }
+            });
+                
+        })
+
+            $(window).on('resize', function () {
+                activate();
+            });
+
+        function activate() {
+            var win = $(window).width(); 
+           
+
+            if (win <= 578) {
+                $('.cantidad').hide();
+                $('.bg-white.bx-shadow').removeClass('sticky-top');
+            } else {
+                $('.cantidad').show();
+                $('.bg-white.bx-shadow').addClass('sticky-top');
+            }
+        }
+        activate();
+
+        $('.productos .carousel').carousel({
+            interval: false
+        })
+
+       
+    </script>
 </body>
 
 </html>

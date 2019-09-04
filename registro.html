@@ -1,0 +1,1245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>BitShop</title>
+    <link href="https://fonts.googleapis.com/css?family=Aleo:300,400,700|Montserrat:300,400,500,700|Quicksand:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="css/main.css?v=1.0.5" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="px-lg-5 px-md-3 body-content">
+
+            <div class="container-fluid d-none d-md-block">
+                <div class="row text-sm-left text-center">
+                    <div class="col-sm-8">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item"><i class="fas fa-mobile-alt"></i> +56 226565094</li>
+                            <li class="list-inline-item danger">
+                                <a href="#" class="border-left pl-2">Garantia y Despacho</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Servicio al Cliente</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Contáctenos</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col text-right d-none d-sm-block">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <div class="dropdown">
+                                    <a href="#" class="dropdown-toggle text-white text-capitalize" id="dropdownMenua" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Hola Nombre de usuario
+                                    </a>
+                                    <div class="dropdown-menu z-10" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item text-body" href="#">Ver Ordenes de Compra</a>
+                                        <a class="dropdown-item text-body" href="#">Cerrar Sesión</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="bg-white sticky-top bx-shadow">
+        <div class="px-lg-5 px-md-3 body-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-md-3 px-md-0 align-items-baseline">
+                        <nav class="navbar navbar-expand-md navbar-light px-sm-2 px-0 py-0 py-sm-2">
+                            <a class="navbar-brand" href="index.html">
+                                <img class="logo" src="img/logo_bitshop.png" alt="">
+                            </a>
+
+
+                            <div class="d-flex d-md-none d-none">
+                                <a href="#">
+                                    <div class="login d-flex justify-content-start mr-lg-2 mr-2">
+                                        <span class="mr-1 icon rounded-circle text-center p-1">
+                                            <img src="img/Iconos-Wishlist.png" class="align-text-bottom">
+                                        </span>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="cart d-flex justify-content-start">
+                                        <span class="icon rounded-circle text-center p-1">
+                                            <img src="img/Iconos-Carro.png" class="align-text-bottom">
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <a class="navbar-toggler" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarResponsive"
+                                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                        </nav>
+
+
+                    </div>
+                    <!-- buscar -->
+                    <div class="col-md-6 px-md-0">
+                        <form class="mt-0 mt-sm-3">
+                            <div class="form-group mb-2 buscar">
+                                <label for="buscar" class="sr-only">Buscar</label>
+                                <input type="text" class="form-control" id="buscar" placeholder="Estoy buscando...">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </form>
+                    </div>
+                    <!--/ buscar -->
+
+                    <!-- login -->
+                    <div id="show-scroll" class="col text-right d-none pl-0">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item mr-md-0">
+                                <a class="underline" href="login.html">Iniciar sesión</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="underline" href="registro.html">Crear cuenta</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/ login -->
+
+
+                    <!-- Navbar mega menu -->
+                    <div class="col-lg-12 d-md-block d-none">
+                        <nav class="navbar navbar-expand-md px-0 pb-0">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarText">
+                                <ul class="nav text-uppercase mr-auto">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle pl-0 font-weight-bold quick" data-toggle="dropdown"
+                                            href="#" role="button" aria-haspopup="true" aria-expanded="false">Categorías</a>
+                                        <div class="dropdown-menu text-capitalize py-0 mt-0 bg-light">
+                                            <div class="row shadow rounded">
+                                                <!-- Categorias -->
+                                                <div class="col-3 col-md-4 col-lg-3 bg-secondary px-0 rounded-left">
+                                                    <div class="nav flex-column nav-pills py-3 text-white position-relative"
+                                                        id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                        <div class="arrow"></div>
+                                                        <a class="nav-link text-white pl-2" id="v-pills-computacion-tab"
+                                                            data-toggle="pill" href="#v-pills-computacion" role="tab"
+                                                            aria-controls="v-pills-computacion" aria-selected="true">Computación
+                                                            <i class="fas fa-chevron-right"></i> </a>
+
+                                                        <a class="nav-link text-white pl-2" id="v-pills-smarthome-tab"
+                                                            data-toggle="pill" href="#v-pills-smarthome" role="tab"
+                                                            aria-controls="v-pills-smarthome" aria-selected="false">SmartHome
+                                                            & Security <i class="fas fa-chevron-right"></i></a>
+
+                                                        <a class="nav-link text-white pl-2" id="v-pills-celulares-tab"
+                                                            data-toggle="pill" href="#v-pills-celulares" role="tab"
+                                                            aria-controls="v-pills-celulares" aria-selected="false">Celulares
+                                                            <i class="fas fa-chevron-right"></i></a>
+
+                                                        <a class="nav-link text-white pl-2" id="v-pills-gamers-tab"
+                                                            data-toggle="pill" href="#v-pills-gamers" role="tab"
+                                                            aria-controls="v-pills-gamers" aria-selected="false">Gamers <i
+                                                                class="fas fa-chevron-right"></i></a>
+
+                                                        <a class="nav-link text-white pl-2" id="v-pills-alarmas-tab"
+                                                            data-toggle="pill" href="#v-pills-alarmas" role="tab"
+                                                            aria-controls="v-pills-alarmas" aria-selected="false">Alarmas y
+                                                            Seguridad <i class="fas fa-chevron-right"></i></a>
+
+                                                        <a class="nav-link text-white pl-2" id="v-pills-accesorios-tab"
+                                                            data-toggle="pill" href="#v-pills-accesorios" role="tab"
+                                                            aria-controls="v-pills-accesorios" aria-selected="false">Accesorios
+                                                            <i class="fas fa-chevron-right"></i></a>
+
+                                                        <a class="nav-link text-white pl-2" id="v-pills-audio-tab"
+                                                            data-toggle="pill" href="#v-pills-audio" role="tab"
+                                                            aria-controls="v-pills-audio" aria-selected="false">Audio y
+                                                            Video <i class="fas fa-chevron-right"></i></a>
+
+                                                        <a class="nav-link text-white pl-2" id="v-pills-redes-tab"
+                                                            data-toggle="pill" href="#v-pills-redes" role="tab"
+                                                            aria-controls="v-pills-redes" aria-selected="false">Redes <i
+                                                                class="fas fa-chevron-right"></i></a>
+
+                                                        <a class="nav-link text-white pl-2" id="v-pills-insumos-tab"
+                                                            data-toggle="pill" href="#v-pills-insumos" role="tab"
+                                                            aria-controls="v-pills-insumos" aria-selected="false">Insumos
+                                                            de Oficina <i class="fas fa-chevron-right"></i></a>
+
+                                                        <a class="nav-link text-white pl-2" id="v-pills-software-tab"
+                                                            data-toggle="pill" href="#v-pills-software" role="tab"
+                                                            aria-controls="v-pills-software" aria-selected="false">Software
+                                                            <i class="fas fa-chevron-right"></i></a>
+
+                                                        <a class="nav-link text-white pl-2" id="v-pills-cloud-tab"
+                                                            data-toggle="pill" href="#v-pills-cloud" role="tab"
+                                                            aria-controls="v-pills-cloud" aria-selected="false">Cloud
+                                                            Computing <i class="fas fa-chevron-right"></i></a>
+
+                                                    </div>
+                                                </div>
+                                                <!-- Categorias -->
+
+                                                <!-- Mega menu info categoría -->
+                                                <div class="col rounded-right bg-another-grey">
+                                                    <div class="tab-content ml-3 mr-2 mt-4" id="v-pills-tabContent">
+                                                        <!-- computación -->
+                                                        <div class="tab-pane" id="v-pills-computacion" role="tabpanel"
+                                                            aria-labelledby="v-pills-computacion-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/computacion.png" alt="computación">
+                                                                Computación</h1>
+                                                            <hr>
+                                                            <div class="row mt-4">
+                                                                <div class="col-lg-3 col-6">
+                                                                    <h6>Subcategoría</h6>
+                                                                    <ul class="list-unstyled text-small">
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-3 col-6">
+                                                                    <h6>Subcategoría</h6>
+                                                                    <ul class="list-unstyled text-small">
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-3 col-6">
+                                                                    <h6>Subcategoría</h6>
+                                                                    <ul class="list-unstyled text-small">
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-3 col-6">
+                                                                    <h6>Subcategoría</h6>
+                                                                    <ul class="list-unstyled text-small">
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mt-5 mb-3">
+                                                                <div class="col-lg-3 col-6">
+                                                                    <h6>Subcategoría</h6>
+                                                                    <ul class="list-unstyled text-small">
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-3 col-6">
+                                                                    <h6>Subcategoría</h6>
+                                                                    <ul class="list-unstyled text-small">
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-3 col-6">
+                                                                    <h6>Subcategoría</h6>
+                                                                    <ul class="list-unstyled text-small">
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-lg-3 col-6">
+                                                                    <h6>Subcategoría</h6>
+                                                                    <ul class="list-unstyled text-small">
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                        <li><a class="text-muted" href="#">Productos</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--/ computación -->
+
+                                                        <!-- SmartpHones & Security -->
+                                                        <div class="tab-pane" id="v-pills-smarthome" role="tabpanel"
+                                                            aria-labelledby="v-pills-smarthome-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/seguridad.png" alt="smartphones & Security">
+                                                                
+                                                                SmartpHones & Security</h1>
+                                                            <hr>
+                                                        </div>
+                                                        <!--/ SmartpHones & Security -->
+
+                                                        <!-- Celulares -->
+                                                        <div class="tab-pane" id="v-pills-celulares" role="tabpanel"
+                                                            aria-labelledby="v-pills-celulares-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/celular.png" alt="celulares">
+
+                                                                Celulares</h1>
+                                                            <hr>
+                                                        </div>
+                                                        <!--/ Celulares -->
+
+                                                        <!-- Gamers -->
+                                                        <div class="tab-pane" id="v-pills-gamers" role="tabpanel"
+                                                            aria-labelledby="v-pills-gamers-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/gamers.png" alt="gamers">
+
+                                                                Gamers</h1>
+                                                            <hr>
+                                                        </div>
+                                                        <!--/ Gamers -->
+
+                                                        <!-- Alarmas y Seguridad -->
+                                                        <div class="tab-pane" id="v-pills-alarmas" role="tabpanel"
+                                                            aria-labelledby="v-pills-alarmas-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/alarmas.png" alt="alarmas y seguridad">
+
+                                                                Alarmas y Seguridad</h1>
+                                                            <hr>
+                                                        </div>
+
+                                                        <!--/ Alarmas y Seguridad -->
+
+                                                        <!-- Audio y Video -->
+                                                        <div class="tab-pane" id="v-pills-audio" role="tabpanel"
+                                                            aria-labelledby="v-pills-audio-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/seguridad.png" alt="audio y video">
+
+                                                                Audio y Video</h1>
+                                                            <hr>
+                                                        </div>
+                                                        <!--/ Audio y Video -->
+
+                                                        <!-- Accesorios -->
+                                                        <div class="tab-pane" id="v-pills-accesorios" role="tabpanel"
+                                                            aria-labelledby="v-pills-accesorios-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/accesorios.png" alt="accesorios">
+
+                                                                Accesorios</h1>
+                                                            <hr>
+                                                        </div>
+                                                        <!--/ Accesorios -->
+
+                                                        <!-- Redes -->
+                                                        <div class="tab-pane" id="v-pills-redes" role="tabpanel"
+                                                            aria-labelledby="v-pills-redes-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/redes.png" alt="Redes">
+                                                                Redes</h1>
+                                                            <hr>
+                                                        </div>
+                                                        <!--/ Redes -->
+
+                                                        <!-- Insumos de Oficina -->
+                                                        <div class="tab-pane" id="v-pills-insumos" role="tabpanel"
+                                                            aria-labelledby="v-pills-insumos-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/oficina.png" alt="Insumos de ofcina">
+                                                                Insumos de Oficina</h1>
+                                                            <hr>
+                                                        </div>
+                                                        <!--/ Insumos de Oficina -->
+
+                                                        <!-- Software -->
+                                                        <div class="tab-pane" id="v-pills-software" role="tabpanel"
+                                                            aria-labelledby="v-pills-software-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/software.png" alt="software">
+
+                                                                Software</h1>
+                                                            <hr>
+                                                        </div>
+                                                        <!--/ Software -->
+
+                                                        <!-- Cloud Computing -->
+                                                        <div class="tab-pane" id="v-pills-cloud" role="tabpanel"
+                                                            aria-labelledby="v-pills-cloud-tab">
+                                                            <h1 class="pill-title text-secondary mt-3 mb-2">
+                                                                <img src="img/cloud.png" alt="Cloud">
+
+                                                                Cloud Computing</h1>
+                                                            <hr>
+                                                        </div>
+                                                        <!--/ Cloud Computing -->
+                                                    </div>
+                                                </div>
+                                                <!-- Mega menu info categoría -->
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item font-weight-bold">
+                                        <a class="nav-link quick" href="categoria.html">Ofertas</a>
+                                    </li>
+                                    <li class="nav-item font-weight-bold">
+                                        <a class="nav-link quick" href="categoria.html">Destacados</a>
+                                    </li>
+                                    <li class="nav-item font-weight-bold">
+                                        <a class="nav-link quick" href="categoria.html">Lo último</a>
+                                    </li>
+                                </ul>
+                                <div class="d-flex">
+                                    <a href="#">
+                                        <div class="login d-flex justify-content-start mr-lg-2">
+                                            <span class="mr-1 icon rounded-circle text-center p-1">
+                                                <img src="img/Iconos-Wishlist.png" class="align-text-bottom">
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="cart d-flex justify-content-start">
+                                            <span class="icon rounded-circle text-center p-1">
+                                                <img src="img/Iconos-Carro.png" class="align-text-bottom">
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!--/ Navbar mega menu -->
+
+                </div>
+
+                <!-- NAVBAR -->
+                <div class="col-12 p-0 pb-2 d-md-none">
+                    <nav class="navbar bg-light py-0">
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav mr-auto text-center scrollTop">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link font-weight-bold dropdown-toggle quick" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categorías</a>
+                                    <div class="dropdown-menu text-center">
+                                        <a class="dropdown-item active" href="#">Computación</a>
+                                        <a class="dropdown-item" href="#">SmartHome & Security</a>
+                                        <a class="dropdown-item" href="#">Celulares</a>
+                                        <a class="dropdown-item" href="#">Gamers</a>
+                                        <a class="dropdown-item" href="#">Alarmas y Seguridad</a>
+                                        <a class="dropdown-item" href="#">Accesorios</a>
+                                        <a class="dropdown-item" href="#">Audio y Video</a>
+                                        <a class="dropdown-item" href="#">Redes</a>
+                                        <a class="dropdown-item" href="#">Insumos de Oficina</a>
+                                        <a class="dropdown-item" href="#">Software</a>
+                                        <a class="dropdown-item" href="#">Cloud Computing</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold active quick" href="#">Ofertas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold quick" href="#">Destacados</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold quick" href="categoria.html">Lo último</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold dropdown-toggle quick text-capitalize" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                                        aria-expanded="false"> Hola Nombre de usuario</a>
+                                       
+                                    <div class="dropdown-menu text-center">
+                                        <a class="dropdown-item" href="#">Ver Ordenes de Compra</a>
+                                        <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </nav>
+                </div>
+                <!-- / NAVBAR -->
+            </div>
+        </div>
+    </div>
+
+    <div class="px-lg-5 px-md-3 body-content">
+        <div class="container-fluid my-4">
+            <div class="row">
+                <!-- STEPS -->
+                <div class="col-12">
+                    <div class="steps">
+                        <ul class="d-md-flex justify-content-between pl-0 text-center">
+
+                            <li id="step-1" class="list-inline-item active position-relative mr-0">
+                                <small>Paso 1</small>
+                                <h6 class="quick font-weight-bold">Iniciar Sesión</h6>
+                            </li>
+
+                            <li id="step-2" class="list-inline-item position-relative mr-0">
+                                <div class="slide-l d-none d-md-block"></div>
+                                <small>Paso 2</small>
+                                <h6 class="quick font-weight-bold">Método Envío</h6>
+                            </li>
+
+                            <li id="step-3" class="list-inline-item position-relative mr-0">
+                                <div class="slide-l d-none d-md-block"></div>
+                                <small>Paso 3</small>
+                                <h6 class="quick font-weight-bold">Orden de Compra</h6>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--/ STEPS -->
+
+                <!-- LOGIN -->
+                <div class="col-md-8 pr-md-2 login-form mb-5 mt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item w-50 text-center">
+                            <a class="nav-link quick active" id="persona-tab" data-toggle="tab" href="#persona" role="tab"
+                                aria-controls="home" aria-selected="true">PERSONA</a>
+                        </li>
+                        <li class="nav-item w-50 text-center">
+                            <a class="nav-link quick" id="empresa-tab" data-toggle="tab" href="#empresa" role="tab"
+                                aria-controls="profile" aria-selected="false">EMPRESA</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content shadow bg-white">
+                        <div class="tab-pane fade show active" id="persona" role="tabpanel" aria-labelledby="persona-tab">
+                            <div class="container py-5 px-sm-4 login">
+                                <div class="col text-center">
+                                    <h4>Inicia sesión con</h4>
+                                    <div class="d-sm-flex justify-content-center mb-5 mt-4">
+                                        <a href="javascript:void(0)" class="paso-2">
+                                            <img class="mr-sm-3 mb-sm-0 mb-3" src="img/google.jpg" alt="Facebbok">
+                                        </a>
+                                        <a href="javascript:void(0)" class="paso-2">
+                                            <img src="img/facebook.jpg" alt="Facebbok">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="offset-sm-3 col-sm-6">
+                                    <h4 class="text-center mb-3">O inicia sesión con tu correo</h4>
+
+                                    <form action="" method="POST">
+                                        <div class="form-group">
+                                            <label for="inputEmail">E-mail</label>
+                                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <label for="inputPass">Contraseña</label>
+                                            <input type="password" class="form-control" id="inputPass">
+                                        </div>
+
+                                        <div class="text-center mt-4">
+                                            <button type="submit" class="btn btn-primary p-2 px-sm-5 px-3 text-uppercase font-weight-bold paso-2">iniciar
+                                                sesión</button>
+                                        </div>
+
+                                        <ul class="mt-4 list-unstyled text-center">
+                                            <li class="mb-3"><a class="text-secondary" href="#">¿Olvidaste tu
+                                                    contraseña?</a></li>
+                                            <li class="d-block lh-1"><a class="text-secondary" href="#">¿No tienes cuenta?
+                                                    <br> Regístrate, es gratis</a></li>
+                                        </ul>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="empresa" role="tabpanel" aria-labelledby="empresa-tab">
+                            <div class="container py-5 px-sm-4 login">
+
+                                <div class="offset-sm-3 col-sm-6">
+                                    <h4 class="text-center mb-3">Inicia sesión</h4>
+
+                                    <form action="" method="POST">
+                                        <div class="form-group">
+                                            <label for="inputEmailEmpresa">E-mail</label>
+                                            <input type="email" class="form-control" id="inputEmailEmpresa">
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <label for="inputPassEmpresa">Contraseña</label>
+                                            <input type="password" class="form-control" id="inputPassEmpresa">
+                                        </div>
+
+                                        <div class="text-center mt-4">
+                                            <button type="submit" class="btn btn-primary p-2 px-sm-5 px-3 text-uppercase font-weight-bold paso-2">iniciar
+                                                sesión</button>
+                                        </div>
+
+                                        <ul class="mt-4 list-unstyled text-center">
+                                            <li class="mb-3"><a class="text-secondary" href="#">¿Olvidaste tu
+                                                    contraseña?</a></li>
+                                            <li class="d-block lh-1"><a class="text-secondary" href="#">¿No tienes cuenta?
+                                                    <br> Regístrate, es gratis</a></li>
+                                        </ul>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ LOGIN -->
+
+                <!-- DETALLE COMPRA -->
+                <div id="detalle-compra" class="col-md-4 pl-md-2 order-1 mb-5 mt-4">
+                    <div class="card rounded mt-2">
+                        <div class="card-body px-3">
+                            <h2 class="font-weight-bold quick text-center text-secondary detalle text-center text-sm-left">Detalle de tu compra</h2>
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between">Subtotal <span class="font-weight-bold">$59.970</span></li>
+                                <li class="list-group-item d-flex justify-content-between"><strong>Total</strong> <b
+                                        class="text-secondary">$59.970</b></li>
+                            </ul>
+
+                            <div class="medio-pago d-none">
+                                <p class="quick h6 font-weight-bold mb-3 mt-4">Escoge medio de pago</p>
+                                <form action="">
+                                    <div class="custom-control custom-radio mb-2 py-2">
+                                        <div>
+                                            <input type="radio" class="custom-control-input" id="deposito" name="medio-pago"
+                                                required>
+                                            <label class="custom-control-label text-secondary" for="deposito">Depósito
+                                                bancario</label>
+                                            <small id="depositoHelp" class="form-text text-muted mt-n2">Depósito
+                                                Bancario / Transferencia Electrónica</small>
+                                        </div>
+                                    </div>
+                                    <div class="custom-control custom-radio mt-2 py-2 d-flex">
+                                        <div class="flex-grow-1">
+                                            <input type="radio" class="custom-control-input" id="customControlValidation3"
+                                                name="medio-pago" required>
+                                            <label class="custom-control-label text-secondary" for="customControlValidation3">
+                                                Web Pay</label>
+                                            <small id="webpayHelp" class="form-text text-muted mt-n2">T. Débito / T.
+                                                Crédito</small>
+                                        </div>
+
+                                        <div class="text-right">
+                                            <img src="img/webpay-logo.png" alt="webpay" class="w-50">
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="mt-3">
+                                <button type="button" class="btn btn-primary btn-block text-uppercase mb-md-0 h-3">Finalizar
+                                    compra</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ DETALLE COMPRA -->
+
+                <!-- DATOS  PERSONALES -->
+                <div id="datos-personales" class="col-md-8 pr-md-2 d-none mb-5 mt-4">
+                    <div class="card rounded mt-2">
+                        <div class="card-body px-4">
+                            <h2 class="font-weight-bold quick text-secondary mb-4 text-center text-sm-left">Datos personales</h2>
+
+                            <form action="" class="needs-validation mb-5" novalidate>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="apellido">Apellido</label>
+                                        <input type="text" class="form-control" id="apellido" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="telefono">Teléfono</label>
+                                        <input type="text" class="form-control" id="telefono" required>
+                                    </div>
+                                </div>
+
+
+                                <!-- METODO ENVIO -->
+                                <h2 class="font-weight-bold quick text-secondary mt-5 mb-4 text-center text-sm-left">Escoge un método de envío</h2>
+
+                                <div class="d-sm-flex justify-content-between justify-content-xl-start medio-envio envio">
+                                    <div class="custom-control custom-radio mb-5 mb-sm-0 w-50">
+                                        <div class="d-flex align-items-center">
+                                            <input type="radio" class="custom-control-input" id="retiro" name="medio-envio"
+                                                required>
+                                            <label class="custom-control-label text-secondary h-100" for="retiro">
+                                                <img class="mr-sm-3" src="img/bags.png" alt="retirar en tienda">Retiro en
+                                                tienda
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="custom-control custom-radio d-flex justify-content-between w-50">
+                                        <div class="d-flex align-items-center">
+                                            <input type="radio" class="custom-control-input" id="despacho" name="medio-envio"
+                                                required>
+                                            <label class="custom-control-label text-secondary h-100" for="despacho">
+                                                <img class="mr-sm-3" src="img/Icono-Despacho.png" alt="retirar en tienda">Despacho
+                                                a domicilio
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- DESPACHO -->
+                                <div id="despacho-form" class="mt-4 d-none">
+                                    <h6 class="quik">Ingresa una dirección para envio</h6>
+                                    <div class="form-group">
+                                        <label for="direccion">Dirección </label>
+                                        <input type="text" class="form-control" id="direccion">
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="numero">Número</label>
+                                            <input type="text" class="form-control" id="numero" required>
+                                            <div class="invalid-tooltip">
+                                                Te falta completar un dato
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="departamento">Departamento/Oficina/Otros</label>
+                                            <input type="text" class="form-control" id="departamento" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="region">Regiónn</label>
+                                            <select class="form-control" id="region" required>
+                                                <option value="">Seleccione</option>
+                                                <option value="metropolitana">Metropolitana de Santiago</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="comuna">Comuna</label>
+                                            <select class="form-control" id="comuna" required>
+                                                <option value="">Seleccione</option>
+                                                <option value="Vitacura">Vitacura</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 text-center text-md-right">
+                                        <button type="submit" class="btn btn-outline-secondary px-3 text-uppercase">Guardar
+                                            dirección</button>
+                                    </div>
+                                </div>
+                                <!--/ DESPACHO -->
+
+                            </form>
+                            <!--/ METODO ENVIO -->
+
+                            <div class="py-3 mb-5 px-2 bg-factura">
+                                <p class="mb-0">¿Necesitas factura? <a class="text-reset" href="#">Regístrate como
+                                        empresa</a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--/ DATOS  PERSONALES -->
+
+                <!-- ORDEN COMPLETA -->
+                <div id="orden-completa" class="col-12 pr-md-2 d-none mb-5 mt-4">
+                    <div class="card rounded mt-2">
+                        <div class="card-body px-4">
+                            <div class="orden-compra">
+
+                                <div class="row">
+
+                                    <div class="col-xl-8 col-md-7 bg-orden mx-2">
+                                        <div class="py-3">
+                                            <h5 class="mb-0">Tu orden de compra está lista</h5>
+                                            <small>Solo debes realizar el pago por el método escogido y tu producto
+                                                estará
+                                                listo para
+                                                retiro o despacho.</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="col mt-md-0 mt-4 bg-tiempo mx-2">
+                                        <div class="py-3">
+                                            <div class="d-flex align-items-center">
+                                                <div class="mr-3">
+                                                    <img src="img/clock-circular-outline.png" alt="tiempo">
+                                                </div>
+
+                                                <div class="flex-grow-1">
+                                                    <p class="mb-0">
+                                                        Paga tu orden de compra ahora y retira tu producto en 24 hrs.
+                                                        <br>
+                                                        La orden de compra es válida por 48 hrs.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row transferencia mt-5 mb-4">
+                                    <div class="col-lg-6">
+                                        <h3>Información para depósito o transfrencia bancaria</h3>
+                                        <div class="table-responsive">
+                                            <table class="mb-4">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-secondary pr-5">Nº cuenta: 0100000-01 </td>
+                                                        <td class="text-secondary">Banco de Chile</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-secondary">Bitshop SPA </td>
+                                                        <td class="text-secondary">Rut: 76.001.001-1 </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="lh-s">
+
+                                            <small class="sm"> <strong>Importante: </strong>Tu orden cuenta como pagada una vez que se
+                                            valide el o los comprobantes de pago. Se te avisará mediante correo
+                                            electrónico una vez hecha la verificación.</small>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4">
+
+                                    <div class="col-sm-6">
+                                        <h5 class="text-secondary line pb-2 quick font-weight-bold">
+                                            Información de la Orden
+                                        </h5>
+
+                                        <ul class="list-unstyled mt-3">
+                                            <li>Nº Orden: 0021501264</li>
+                                            <li>Fecha Emisión: 18/01/2019</li>
+                                            <li>Estado Actual: Vigente</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <h5 class="text-secondary line pb-2 quick font-weight-bold">
+                                            Información de Pago
+
+                                        </h5>
+
+                                        <ul class="list-unstyled mt-3">
+                                            <li>Método de Pago: Webpay</li>
+                                            <li>Tipo Recibo: Boleta</li>
+                                            <li>Nombre: Nombre Usuario Registrado</li>
+                                            <li>Comprobante: Boleta</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                                <!-- tabla orden de compra -->
+                                <div class="row mt-4">
+                                    <div class="col-12">
+                                        <div class="carro">
+                                            <table class="table table-borderless">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">SKU</th>
+                                                        <th scope="col">Marca</th>
+                                                        <th scope="col">Producto</th>
+                                                        <th scope="col">Cantidad</th>
+                                                        <th scope="col">Precio uni.</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="sku" scope="row">123456</td>
+                                                        <td class="marca">HP</td>
+                                                        <td class="producto">HP Elitebook 1040 G3 Core i7-6600U
+                                                            8GB/512GB
+                                                            14" W10 Pro</td>
+                                                        <td class="cantidad-d">1</td>
+                                                        <td class="preciou">$100.000</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="sku" scope="row">123456</td>
+                                                        <td class="marca">HP</td>
+                                                        <td class="producto">HP Elitebook 1040 G3 Core i7-6600U
+                                                            8GB/512GB
+                                                            14" W10 Pro</td>
+                                                        <td class="cantidad-d">1</td>
+                                                        <td class="preciou">$100.000</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="sku" scope="row">123456</td>
+                                                        <td class="marca">HP</td>
+                                                        <td class="producto">HP Elitebook 1040 G3 Core i7-6600U
+                                                            8GB/512GB
+                                                            14" W10 Pro</td>
+                                                        <td class="cantidad-d">1</td>
+                                                        <td class="preciou">$100.000</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <div class="text-right mt-5 mb-4">
+                                                <button id="pagar-orden" type="button" class="btn btn-primary text-uppercase font-weight-bold py-2 px-sm-5">Pagar
+                                                    orden de compra</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--/ tabla orden de compra -->
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ORDEN COMPLETA -->
+
+                <!-- MIS ORDENES DE COMPRA -->
+                <div id="mis-ordenes-compra" class="col-12 pr-md-2 d-none mb-5 mt-4">
+                    <div class="card rounded mt-2">
+                        <div class="card-body px-4">
+
+                            <!-- tabla mis ordenes de compra -->
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <div class="carro">
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Nº Orden</th>
+                                                    <th scope="col">Fecha</th>
+                                                    <th scope="col">Estado</th>
+                                                    <th scope="col">Método pago</th>
+                                                    <th scope="col">Envío</th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="orden" scope="row">123456</td>
+                                                    <td class="fecha">18/01/2019</td>
+                                                    <td class="estado">Vigente</td>
+                                                    <td class="metodo">Tranferencia</td>
+                                                    <td class="envio">Retiro en tienda</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-outline-primary text-uppercase font-weight-bold">Ver
+                                                            orden</button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="orden" scope="row">123456</td>
+                                                    <td class="fecha">18/01/2019</td>
+                                                    <td class="estado">Vigente</td>
+                                                    <td class="metodo">Tranferencia</td>
+                                                    <td class="envio">Retiro en tienda</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-outline-primary text-uppercase font-weight-bold">Ver
+                                                            orden</button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="orden" scope="row">123456</td>
+                                                    <td class="fecha">18/01/2019</td>
+                                                    <td class="estado">Vigente</td>
+                                                    <td class="metodo">Tranferencia</td>
+                                                    <td class="envio">Retiro en tienda</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-outline-primary text-uppercase font-weight-bold">Ver
+                                                            orden</button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="orden" scope="row">123456</td>
+                                                    <td class="fecha">18/01/2019</td>
+                                                    <td class="estado">Vigente</td>
+                                                    <td class="metodo">Tranferencia</td>
+                                                    <td class="envio">Retiro en tienda</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-outline-primary text-uppercase font-weight-bold">Ver
+                                                            orden</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--/ tabla mis ordenes de compra -->
+                        </div>
+                    </div>
+                    <!-- MIS ORDENES DE COMPRA -->
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-3 bg-white">
+        <div class="px-lg-5 px-md-3 body-content">
+            <div class="container-fluid">
+
+                <div class="row justify-content-between align-items-baseline mb-5">
+                    <div class="col-6">
+                        <img class="logo" src="img/logo_bitshop.png" alt="BitShop">
+                    </div>
+                    <div class="col-6 col-md-5">
+                        <ul class="list-inline mb-0 text-right">
+                            <li class="list-inline-item text-uppercase pr-3 d-none d-sm-inline">Síguenos en</li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <div class="bg-primary text-center" style="width:30px;height:30px;">
+                                        <i class="fab fa-facebook-f fa-lg text-white mt-2"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <div class="bg-primary text-center" style="width:30px;height:30px;">
+                                        <i class="fab fa-instagram fa-lg text-white mt-2"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2 col-sm-4 col-6">
+                        <h6 class="text-uppercase">Regístrate</h6>
+                        <ul class="list-unstyled text-small mt-3">
+                            <li><a class="text-secondary" href="login.html">Iniciar Sesión</a></li>
+                            <li><a class="text-secondary" href="registro.html">Crear una Cuenta</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col">
+                        <h6 class="text-uppercase">Sobre Nosotros </h6>
+                        <ul class="list-unstyled text-small mt-3">
+                            <li><a class="text-secondary" href="#">Quienes Somos</a></li>
+                            <li><a class="text-secondary" href="#">Política de Privacidad</a></li>
+                            <li><a class="text-secondary" href="#">Términos y Condiciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col">
+                        <h6 class="text-uppercase">Asistencia</h6>
+                        <ul class="list-unstyled text-small mt-3">
+                            <li><a class="text-secondary" href="#">Garantia y Despacho</a></li>
+                            <li><a class="text-secondary" href="#">Servicio al Cliente</a></li>
+                            <li><a class="text-secondary" href="#">Preguntas Frecuentes</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <h6 class="text-uppercase">suscríbete</h6>
+                        <p class="mt-2 text-strong-grey">
+                            Y recibe nuestras ofertas y novedades
+                        </p>
+
+                        <form class="mt-3">
+                            <div class="input-group mb-3 buscar">
+                                <input type="text" class="form-control mr-2" placeholder="Ingresa tu correo" aria-label="Ingresa tu correo"
+                                    aria-describedby="basic-addon2">
+                                <button type="button" class="btn btn-outline-primary text-uppercase mb-md-0 font-weight-bold">suscribirse</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-5 mt-md-5 text-center text-md-left">
+                        <span class="d-block d-sm-none">+56 9 45664785445</span>
+                        <p class="mb-0">Román Díaz 688, Providencia, Santiago <span class="cantidad">+56 9 45664785445</span></p>
+                        <p>© 2019 Bitshop. Todos los derechos reservados</p>
+                    </div>
+
+                    <div class="col mt-5">
+                        <div class="d-flex justify-content-between footer-img align-items-center">
+                            <div>
+                                <img src="img/sitio-seguro.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/enviame.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/webpay-logo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // mega-menu
+            $(".nav-pills a").mouseover(function () {
+                    $('#v-pills-tab a[href="'+ $(this).attr('href')+'"]').tab('show')
+                })
+                // stiky header 
+                
+
+                $(window).scroll(function(){
+                    var sticky = $('.sticky-top'),
+                    scroll = $(window).scrollTop();
+
+                    if (scroll >= 100) {
+                        sticky.addClass('scroll');
+                        $('#show-scroll').removeClass('d-none');
+                    }else if (scroll <= 58) {
+                        sticky.removeClass('scroll');
+                        $('#show-scroll').addClass('d-none');
+                    }
+                });
+                
+            })
+
+
+        $(".medio-pago :radio").change(function () {
+            if (this.checked) {
+                $('.medio-pago').find('.active').removeClass('active');
+                $(this).parent().parent().addClass('active');
+            }
+        });
+
+        // despacho from
+        $(".medio-envio :radio").change(function () {
+            $('.medio-envio').find('.active').removeClass('active');
+            $(this).parent().parent().addClass('active');
+
+            if (this.id === 'despacho') {
+                $('#despacho-form').removeClass('d-none').fadeIn();
+            } else {
+                $('#despacho-form').fadeOut();
+            }
+        });
+
+        // steps 
+        $(".paso-2").click(function () {
+            // continuamos con el sigueinte paso (metodo de envio)
+            $('.login-form').fadeOut();
+            $('#datos-personales').removeClass('d-none');
+            $('#step-1').removeClass('active');
+            $('#step-2').addClass('active');
+            $('.medio-pago.d-none').removeClass('d-none');
+
+        });
+        $("#pagar-orden").click(function () {
+            // pasamos al ultimo paso
+            $('#orden-completa').fadeOut();
+            $('#mis-ordenes-compra').removeClass('d-none');
+
+        });
+    </script>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        } else {
+
+                            event.preventDefault();
+                            //continuamos con el paso 3 (orden de compra)
+                            $('#datos-personales, #detalle-compra').fadeOut();
+                            $('#orden-completa').removeClass('d-none');
+                            $('#step-2').removeClass('active');
+                            $('#step-3').addClass('active');
+
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+
+
+        $(window).on('resize', function () {
+            activate();
+        });
+
+        function activate() {
+            var win = $(window).width(); 
+           
+
+            if (win <= 578) {
+                $('.cantidad').hide();
+                $('.bg-white.bx-shadow').removeClass('sticky-top');
+            } else {
+                $('.cantidad').show();
+                $('.bg-white.bx-shadow').addClass('sticky-top');
+            }
+        }
+
+        activate();
+
+    </script>
+</body>
+
+</html>
