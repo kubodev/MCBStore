@@ -1,3 +1,8 @@
 .fontgoogle {
     font-family: 'PT Serif', serif;
 }
+
+.body-content {
+    max-width: 1200px;
+    margin: auto;
+}

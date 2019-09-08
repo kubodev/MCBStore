@@ -20,6 +20,12 @@ $(document).ready(function() {
         }
     });
 
+    $('#carouselExampleIndicators').on('slide.bs.carousel', function() {
+        $('.carousel').carousel({
+            interval: 2000
+        })
+    })
+
 })
 
 $(window).on('resize', function() {
